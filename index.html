@@ -7,19 +7,27 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>Weather app</h1>
-      <div class="input-container">
-        <input type="text" placeholder="Enter Your City name" id="city-input" />
-        <button id="getweaterbtn">Get Weather</button>
+    <div class="content">
+      <div class="container">
+        <h1>Weather app</h1>
+        <div class="input-container">
+          <input
+            type="text"
+            placeholder="Enter Your City name"
+            id="city-input"
+          />
+          <button id="getweaterbtn">Get Weather</button>
+        </div>
+        <div class="hidden" id="weather-info">
+          <h2 id="city-name"></h2>
+          <p id="temp"></p>
+          <p id="discrip"></p>
+        </div>
+        <p id="errormessage" class="hidden">City not found.</p>
       </div>
-      <div class="hidden" id="weather-info">
-        <h2 id="city-name"></h2>
-        <p id="temp"></p>
-        <p id="discrip"></p>
-      </div>
-      <p id="errormessage" class="hidden">City not found.</p>
     </div>
+
+    <h4 class="copyright">© 2024 Sagar Yadav. All rights reserved.</h4>
     <script src="script.js"></script>
   </body>
 </html>
